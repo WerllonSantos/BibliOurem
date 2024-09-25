@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#929292"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="179dp"
+        android:layout_height="159dp"
+        android:src="@drawable/biblior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:id="@+id/componentContainer"
+        style="@style/ContainerComponents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/baseline_email_24"
+        android:inputType="textEmailAddress"
+        android:hint="Email:"
+        app:layout_constraintStart_toStartOf="@id/componentContainer"
+        app:layout_constraintEnd_toEndOf="@id/componentContainer"
+        app:layout_constraintTop_toTopOf="@id/componentContainer" />
+
+    <EditText
+        android:id="@+id/senhaEditText"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/baseline_remove_red_eye_24"
+        android:inputType="numberPassword"
+        android:hint="Senha:"
+        app:layout_constraintStart_toStartOf="@id/componentContainer"
+        app:layout_constraintEnd_toEndOf="@id/componentContainer"
+        app:layout_constraintTop_toBottomOf="@id/emailEditText" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="334dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="72dp"
+        android:text="Li e aceito a política de privacidade e os termos de uso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/senhaEditText" />
+
+    <Button
+        android:id="@+id/iniciar"
+        style="@style/Button"
+        android:text="@string/Iniciarsessão"
+        app:layout_constraintStart_toStartOf="@id/componentContainer"
+        app:layout_constraintEnd_toEndOf="@id/componentContainer"
+        app:layout_constraintTop_toBottomOf="@id/checkBox" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="27dp"
+        android:text="Esqueceu a senha?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iniciar" />
+
+
+    <Button
+        android:id="@+id/cadastro"
+        android:layout_width="313dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#f47c74"
+        android:text="Cadastre-se"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"  />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

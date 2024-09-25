@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".perfil">
+
+   <!-- Voltar botão -->
+   <ImageButton
+       android:id="@+id/btn_back"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/ic_back" <!-- ícone de seta para voltar -->
+   android:background="?attr/selectableItemBackgroundBorderless"
+   android:contentDescription="Voltar" />
+
+   <!-- Título da página -->
+   <TextView
+       android:id="@+id/tv_title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Meus dados"
+       android:textSize="20sp"
+       android:layout_gravity="center"
+       android:layout_marginTop="16dp"
+       android:textStyle="bold" />
+
+   <!-- Imagem de perfil -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="vertical"
+       android:layout_marginTop="20dp">
+
+      <ImageView
+          android:id="@+id/iv_profile_picture"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/ic_profile" <!-- ícone padrão do perfil -->
+      android:background="@drawable/profile_picture_background"
+      android:layout_gravity="center" />
+
+      <!-- Botão para alterar a imagem -->
+      <ImageButton
+          android:id="@+id/btn_change_picture"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_camera"
+          android:background="?attr/selectableItemBackgroundBorderless"
+          android:layout_marginTop="-20dp"
+          android:layout_marginLeft="60dp"
+          android:contentDescription="Alterar foto" />
+   </LinearLayout>
+
+   <!-- Nome -->
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Nome"
+       android:textSize="14sp"
+       android:textColor="@color/gray" />
+
+   <EditText
+       android:id="@+id/et_name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Paulo Werllon Lima dos Santos"
+       android:background="@android:color/transparent"
+       android:layout_marginBottom="16dp"
+       android:enabled="false" />
+
+   <!-- CPF -->
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="CPF"
+       android:textSize="14sp"
+       android:textColor="@color/gray" />
+
+   <EditText
+       android:id="@+id/et_cpf"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="015.300.092-94"
+       android:background="@android:color/transparent"
+       android:layout_marginBottom="16dp"
+       android:enabled="false" />
+
+   <!-- Dados de acesso -->
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Dados de acesso"
+       android:textSize="16sp"
+       android:textStyle="bold"
+       android:layout_marginTop="16dp" />
+
+   <!-- Login -->
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Login"
+       android:textSize="14sp"
+       android:textColor="@color/gray" />
+
+   <EditText
+       android:id="@+id/et_login"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="paulowerllon@gmail.com"
+       android:background="@android:color/transparent"
+       android:layout_marginBottom="16dp"
+       android:enabled="false" />
+
+   <!-- Senha -->
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Senha"
+       android:textSize="14sp"
+       android:textColor="@color/gray" />
+
+   <EditText
+       android:id="@+id/et_password"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textPassword"
+       android:text="****"
+       android:background="@android:color/transparent"
+       android:enabled="false" />
+
+   <!-- Botão para alterar senha -->
+   <Button
+       android:id="@+id/btn_change_password"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Alterar senha"
+       android:layout_gravity="end"
+       android:textColor="@color/primary"
+       android:background="@android:color/transparent"
+       android:layout_marginTop="8dp" />
+
+   <!-- Dados adicionais (opcional) -->
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Dados adicionais"
+       android:textSize="16sp"
+       android:textStyle="bold"
+       android:layout_marginTop="16dp" />
+
+   <EditText
+       android:id="@+id/et_additional_data"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Nenhum dado adicional"
+       android:background="@android:color/transparent"
+       android:enabled="false" />
+
+</LinearLayout>

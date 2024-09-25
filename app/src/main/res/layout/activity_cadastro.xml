@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#929292"
+    tools:context=".Cadastro">
+
+
+    <TextView
+      android:id="@+id/title_cadastrese"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="cadastre-se"
+      android:textSize="50sp"
+      android:textColor="@color/white"
+      android:textStyle="bold"
+      android:layout_marginTop="50dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+
+    />
+
+       <EditText
+        android:id="@+id/nomeEditText"
+        style="@style/Edit_Text"
+        android:hint="Nome:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_cadastrese" />
+
+    <EditText
+        android:id="@+id/cpfEditText"
+        style="@style/Edit_Text"
+        android:hint="Cpf:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nomeEditText" />
+
+    <EditText
+        android:id="@+id/rgEditText"
+        style="@style/Edit_Text"
+        android:hint="Rg:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cpfEditText" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        style="@style/Edit_Text"
+        android:hint="Email:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rgEditText" />
+
+    <EditText
+        android:id="@+id/senhaEditText"
+        style="@style/Edit_Text"
+        android:hint="Senha:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailEditText" />
+
+    <Button
+        android:id="@+id/cadastrar"
+        style="@style/Button"
+        android:text="Cadastrar"
+        android:padding="20dp"
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/senhaEditText"
+        app:rippleColor="#EC3727" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
