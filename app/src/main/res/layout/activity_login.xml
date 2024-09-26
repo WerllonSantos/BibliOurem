@@ -78,7 +78,7 @@
 
 
     <Button
-        android:id="@+id/cadastro"
+        android:id="@+id/btnCadastro"
         android:layout_width="313dp"
         android:layout_height="56dp"
         android:backgroundTint="#f47c74"
