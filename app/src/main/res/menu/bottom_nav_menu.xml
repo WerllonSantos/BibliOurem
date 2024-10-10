@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home"  <!-- Adicione um ícone para a página inicial -->
-    android:title="Início" />
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Início" />
+
     <item
-        android:id="@+id/navigation_favorites"
-        android:icon="@drawable/ic_favorites"  <!-- Adicione um ícone para favoritos -->
-    android:title="Favoritos" />
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Favoritos" />
+
     <item
-        android:id="@+id/navigation_profile"
-        android:icon="@drawable/ic_profile"  <!-- Adicione um ícone para perfil -->
-    android:title="Perfil" />
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile_placeholder"
+        android:title="Perfil" />
 </menu>
