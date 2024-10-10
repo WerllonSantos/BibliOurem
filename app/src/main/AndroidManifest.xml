@@ -20,9 +20,9 @@
             android:name=".Perfil"
             android:exported="false" />
 
-        <activity
-            android:name=".Cadastro"
-            android:exported="false" />
+
+        <activity android:name=".CadastroActivity"
+        android:exported="false" />
 
         <activity
             android:name=".Login"

@@ -1,3 +1,5 @@
+package com.example.bibliourem
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +12,6 @@ class InicioFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_inicio, container, false) // Verifique o nome do layout
+        return inflater.inflate(R.layout.fragment_inicio, container, false) // Verifique se o layout está corretamente nomeado
     }
 }
