@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     tools:context=".Perfil">
 
 
@@ -29,26 +30,44 @@
             android:text="Meus dados"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.167"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btn_seta" />
 
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="81dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title_meu_dados"
+            tools:srcCompat="@tools:sample/avatars" />
 
 
+        <Button
+            android:id="@+id/btnfoto"
+            android:layout_width="89dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="80dp"
+            android:text="Foto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
 
         <TextView
             android:id="@+id/nome_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="104dp"
+            android:layout_marginTop="35dp"
             android:text="Nome"
             android:textColor="@color/gray"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/title_meu_dados" />
+            app:layout_constraintTop_toTopOf="@+id/btnfoto" />
 
         <EditText
             android:id="@+id/et_name"
@@ -114,31 +133,33 @@
             android:id="@+id/et_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
             android:background="@android:color/transparent"
             android:enabled="false"
             android:text="paulowerllon@gmail.com"
-            android:layout_marginTop="25dp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/login_use"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/login_use" />
 
         <TextView
             android:id="@+id/et_senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
             android:text="Senha"
             android:textColor="@color/gray"
             android:textSize="14sp"
-            android:layout_marginTop="30dp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/et_login"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_login" />
 
         <EditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="136dp"
             android:background="@android:color/transparent"
             android:enabled="false"
             android:inputType="textPassword"
@@ -151,7 +172,7 @@
         <Button
             android:id="@+id/salvar_altereação"
             style="@style/Button"
-            android:layout_marginTop="132dp"
+            android:layout_marginTop="152dp"
             android:text="@string/salvar_Alteração"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
