@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nav_inicio" type="id">inicio</item>
+    <item name="nav_favorito" type="id">favorito</item>
+</resources>
